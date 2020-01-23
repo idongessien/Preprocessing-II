@@ -14,3 +14,20 @@
     justify-content: @justify;
     flex-direction: @flexdir;
 }
+
+// Border Bottom
+.borderbum(){
+    border-bottom: 3px dashed grey;
+    border-color: lighten(grey, 20%);
+}
+
+// Buttons
+.buttons(@txtalign, @colour){
+    text-align: @txtalign;
+    width: 80%;
+    padding: 6%;
+    border-radius: 15px;
+    font-size: 1.7rem;
+    color: @colour;
+    background: @button-bg;
+}
