@@ -1,1 +1,16 @@
 // Mixins in here
+
+// link styles
+.navlinks(@fontsize){
+    text-decoration: none;
+    color: @font-color;
+    font-size: @fontsize;
+}
+
+// Display Flex
+.displayflex(@flexdir, @justify){
+    display: flex;
+    align-items: center;
+    justify-content: @justify;
+    flex-direction: @flexdir;
+}

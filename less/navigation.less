@@ -1,1 +1,25 @@
 // Navigation Styles here
+.nav-content {
+    border-bottom: 3px dashed grey;
+    border-color: lighten(grey, 20%); // Function
+    width: 120%;
+    margin: 0 auto;
+    position: relative;
+    right: 10%;
+    padding: 0 10%;
+
+    .displayflex(row, space-between); // Parametric Mixin
+    nav {
+        width: 50%;
+        padding: 5% 0;
+
+        ul {
+            .displayflex(row, space-around);
+            li{
+                a{
+                    .navlinks(1.8rem);
+                }
+            }
+        }
+    }
+}
