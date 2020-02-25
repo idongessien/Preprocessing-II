@@ -1,1 +1,34 @@
 // Navigation Styles here
+.nav-content {
+    .borderbum(); 
+    width: 120%;
+    margin: 0 auto;
+    position: relative;
+    right: 10%;
+    padding: 0 10%;
+    .displayflex(row, space-between); // Parametric Mixin
+
+    @media @mobile {
+        width: 110%;
+        text-align: center;
+        padding:8% 0 0;
+        right:5%;
+        .displayflex(column, space-around);
+    }
+    nav {
+        width: 50%;
+        padding:3% 0;
+
+        @media @mobile {
+            width: 80%;
+        }
+        ul {
+            .displayflex(row, space-around);
+            li{
+                a{
+                    .navlinks(1.8rem);
+                }
+            }
+        }
+    }
+}

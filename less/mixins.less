@@ -1,1 +1,32 @@
 // Mixins in here
+
+// link styles
+.navlinks(@fontsize){
+    text-decoration: none;
+    color: @font-color;
+    font-size: @fontsize;
+}
+
+// Display Flex
+.displayflex(@flexdir, @justify){
+    display: flex;
+    flex-direction: @flexdir;
+    justify-content: @justify;
+    align-items: center;}
+
+// Border Bottom
+.borderbum(){
+    border-bottom: 3px dashed grey;
+    border-color: lighten(grey, 20%);
+}
+
+// Buttons
+.buttons(@txtalign, @colour){
+    text-align: @txtalign;
+    width: 80%;
+    padding: 6%;
+    border-radius: 15px;
+    font-size: 1.7rem;
+    color: @colour;
+    background: @button-bg;
+}
